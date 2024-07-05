@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/style.css">
     <title>Prework Study Guide</title>
     <style>
       body {
@@ -41,7 +42,54 @@
       <section class="card" id="css-section">
         <h2>CSS</h2>
         <ul>
-          <li>CSS is used to define styles for a web page,including the design, layout and variations in display for different devices</li>
+          <li>Acronym for cascading style sheets</li>
+          <li>CSS is used to format the layout of a web page, including design, styles, colours, and variations in display for different devices</li>
+          <li>3 methods for adding CSS:</li>
+            <ul>
+              <li>Inline by using the style attribute in an individual HTML element in body section <br>
+                  Defines the style of a singular HTML element</li>
+              <li>Internal by using a style element in head section <br>
+                   Defines the style of a singular HTML page</li>
+              <li>External by using a link element in head section to associate a separate .css file. Defines the style of multiple HTML pages <br>
+                  rel attribute defines the relationship and href attribute defines the target</li>
+                  <ul>
+                    <li>A css selector is used in the stylesheet to select the element to be styled with css properties</li>
+                    <li>Frequently used css selectors include:</li>
+                      <ul>
+                        <li>named element selector: header, footer, h1, h2, p, img, ul, ol
+                            for eg. 
+                            p { 
+                              text-align: center;
+                              color: red;
+                            }
+                        </li>
+                        <li>id selector: css rule will be applied to an HTML element of a specific id = "mainNav", designated by a #
+                            for eg.
+                            #mainNav {
+                              text-align: center;
+                              color: red;
+                            }
+                        </li>
+                        <li>class selector: css rule will be applied to an HTML element of a specific class = "drop-down-menu", designated by a .
+                            for eg.
+                            .drop-down-menu {
+                              left: 0;
+                              right: auto;
+                            }
+                        </li>
+                        <li>universal selector; css rule will be applied to every HTML element, designated by a *
+                            for eg.
+                            * {
+                              margin: 0;
+                              padding: 0;
+                            }
+                        </li>
+                        <li></li>
+                      </ul>
+                  </ul>
+            </ul>
+          <li>A margin indicates how much space we want around the outside of an element</li>
+          <li>A padding indicates how much space we want around the content inside an element</li>
         </ul>
       </section>
       <section class="card" id="git-section">
@@ -55,11 +103,11 @@
               <li>git merge [branch name]: merge the specified branch's history into the current one</li>
               <li>git log: show the commit history for the currently active branch</li>
               <li>Github workflow:</li>
-                <ol>
+                <ul>
                   <li>git status: shows which branch you are currently on</li>
                   <li>git add -A: commits all files in the working branch to the staging area</li>
             
-                </ol>
+                </ul>
             </ul>  
         </ul>
       </section>
